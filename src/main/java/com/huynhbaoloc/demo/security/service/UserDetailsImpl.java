@@ -118,11 +118,6 @@ private static final long serialVersionUID = 1L;
 		this.company = company;
 	}
 
-	
-	
-	
-	
-	
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {

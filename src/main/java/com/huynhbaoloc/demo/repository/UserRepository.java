@@ -10,8 +10,10 @@ import com.huynhbaoloc.demo.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{
-	@Query("SELECT u from User u  WHERE u.email = ?1")
-	Optional<User> findByEmail(String email);
+//	@Query("SELECT c from User c  WHERE c.email = ?1")
+//	Optional<User> findByEmail(String email);
+	
+	User findByEmail(String email);
 	
 	Boolean existsByEmail(String email);
 }
